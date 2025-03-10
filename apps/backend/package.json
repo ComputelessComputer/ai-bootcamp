@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "dev:bun": "bun run --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:bun": "bun run dist/index.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "hono": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

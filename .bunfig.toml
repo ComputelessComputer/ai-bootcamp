@@ -1,0 +1,8 @@
+[install]
+# Use pnpm for package management
+pnpm = true
+
+[runtime]
+# Configure Bun runtime settings
+jsx = "react"
+jsx-import-source = "react"

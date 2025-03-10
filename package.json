@@ -1,0 +1,24 @@
+{
+  "name": "ai-bootcamp",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "start": "pnpm -r run start",
+    "lint": "pnpm -r run lint",
+    "dev:bun": "bun run --cwd apps/frontend dev",
+    "build:bun": "bun run --cwd apps/frontend build",
+    "start:bun": "bun run --cwd apps/frontend start",
+    "typecheck": "pnpm -r run build"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.4"
+}
